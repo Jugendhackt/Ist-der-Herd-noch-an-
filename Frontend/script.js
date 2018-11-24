@@ -1,11 +1,11 @@
   var an = true;
 function toggle(){
   if(an){
-  document.getElementById("anzeige").innerHTML ="der Herd ist an";
+  document.getElementById("anzeige").innerHTML ="Der Herd ist an";
   $("#image").attr("src","Icon.v.2.Fire.png");
 }
   else {
-    document.getElementById("anzeige").innerHTML ="der Herd ist aus";
+    document.getElementById("anzeige").innerHTML ="Der Herd ist aus";
     $("#image").attr("src","Icon.v.2.NoFire.png");
   }
     an = !an;

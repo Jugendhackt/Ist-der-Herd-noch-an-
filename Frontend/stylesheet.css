@@ -1,32 +1,41 @@
 * {
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 
 h1 {
-  margin-top: 50px;
+  margin: auto;
   text-decoration: underline;
+  text-align: center;
+  margin-top: 45px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+#anzeige {
   text-align: center;
 }
 
-.anzeigebox {
-  width: 300px;
-  height: 200px;
-  border: 2px black solid;
-  padding: 15px;
-  margin: 0;
-  margin-left: 60px;
-}
-
-.column {
-  float:left;
-  width: 33.33%;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.imageandtext {
+  width: 500px;
 }
