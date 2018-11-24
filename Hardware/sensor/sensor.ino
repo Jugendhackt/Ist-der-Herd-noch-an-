@@ -3,9 +3,32 @@ boolean state = false;
 void setup() {
   pinMode(sensorpin,INPUT);
   Serial.begin(115200);
-  
+  setup_wifi(); 
   // put your setup code here, to run once:
 
+}
+
+void setup_wifi() {
+
+  delay(10);
+  // Verbindung zu Freifunk aufbauen
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+ 
+ //only Station, no AP
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {
