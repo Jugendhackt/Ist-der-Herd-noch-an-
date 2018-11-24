@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="script.js"></script>
     <meta charset="utf-8">
@@ -9,18 +10,18 @@
 
   <body>
     <h1>Ist der Herd noch an?</h1>
-    <div id="links"><img src="Icon.v.2.png"></div>
-    <div id="mitte">
+    <div class="row">
+     <div class="column"><img src="Icon.v.2.png"></div>
+     <div class="column">
       <div class="anzeigebox">
-      <p id="anzeige">Hier wird nacher angezeigt ob der Herd an- oder ausgeschaltet ist.</p>
+       <p id="anzeige">Hier wird nacher angezeigt ob der Herd an- oder ausgeschaltet ist.</p>
       </div>
+     </div>
+     <div class="column">
+      <p class="history">Wie ist unsere Idee entstanden?</p>
     </div>
-    <div id="rechts">
-      <h2>Wie ist unsere Idee entstanden?</h2>
-      <p>...</p>
+    <!-- IDEA:  <button type="button" name="button" onclick="toggle()">Toggle</button>-->
     </div>
-    <button type="button" name="button" onclick="toggle()">Toggle</button>
-
 
   </body>
 </html>

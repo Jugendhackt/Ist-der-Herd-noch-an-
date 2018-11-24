@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -13,25 +14,24 @@ h1 {
   height: 100px;
   border: 2px black solid;
   padding: 10px;
-  margin-left: 550px;
   /*margin-top: 50px;*/
 }
 
-
-
-#links {
-  float: left;
-  width: 33%;
+.column {
+  float:left;
+  width: 33.33%;
+  padding: 10px;
 }
 
-
-#mitte {
-  width: 33%;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-#rechts {
-  border: solid 2px black;
-  float: right;
-  width: 33%;
+.history {
+  border: solid black 2px;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
 }
