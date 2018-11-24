@@ -1,17 +1,37 @@
 * {
   font-family: sans-serif;
-  text-align: center;
- }
+}
 
 h1 {
   margin-top: 50px;
+  text-decoration: underline;
+  text-align: center;
 }
 
-div {
+.anzeigebox {
   width: 200px;
   height: 100px;
   border: 2px black solid;
   padding: 10px;
   margin-left: 550px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+}
+
+
+
+#links {
+  float: left;
+  width: 33%;
+}
+
+
+#mitte {
+  width: 33%;
+}
+
+
+#rechts {
+  border: solid 2px black;
+  float: right;
+  width: 33%;
 }
