@@ -14,7 +14,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 25px;
-    background-color: grey;
+    background-color: #a4a6a8;
     width: 100%;
     text-align: center;
 }
@@ -28,14 +28,22 @@ li a {
     text-decoration: none;
 }
 
+
 a {
   color: black;
 }
 
 #anzeige {
   text-align: center;
+  font-size: 1.5em;
 }
 
 .imageandtext {
   width: 500px;
+  margin-left: 31%;
+  margin-top: 50px;
+}
+
+p {
+
 }
