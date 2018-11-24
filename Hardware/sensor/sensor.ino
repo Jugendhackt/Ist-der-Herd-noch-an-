@@ -1,5 +1,5 @@
 #include <ESP8266WiFi.h>
-
+#include "auth.h"
 
 //const char* mqtt_server = "mqtt.stg.freifunk-iot.de";
 
@@ -44,7 +44,12 @@ void loop() {
   state = digitalRead(sensorpin);
   Serial.println(state);
   delay(2000);
-  
-  // put your main code here, to run repeatedly:
+  if (WiFi.status() != WL_CONNECTED)
+  {
+      Serial.println("Hilfe, ich hab kein Internet, aaaah scheisse");
+    }
+   else {
+      Serial.println("Juhuuu Neuland, oh wow");
+    }
 
 }
