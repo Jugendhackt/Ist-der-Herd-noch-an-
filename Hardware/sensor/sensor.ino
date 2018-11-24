@@ -1,3 +1,16 @@
+#include <ESP8266WiFi.h>
+#include <PubSubClient.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BME280.h>
+
+const char* ssid = "verschwoerhaus-legacy";
+const char* password = "mitcodedieweltverbessern";
+//const char* mqtt_server = "mqtt.stg.freifunk-iot.de";
+
+WiFiClient espClient;
+
+PubSubClient client(espClient);
 int sensorpin = D3;
 boolean state = false;
 void setup() {
