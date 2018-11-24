@@ -10,28 +10,23 @@ h1 {
 }
 
 .anzeigebox {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   border: 2px black solid;
-  padding: 10px;
-  /*margin-top: 50px;*/
+  padding: 15px;
+  margin: 0;
+  margin-left: 60px;
 }
 
 .column {
   float:left;
   width: 33.33%;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.history {
-  border: solid black 2px;
-  width: 200px;
-  height: 100px;
-  padding: 10px;
 }
