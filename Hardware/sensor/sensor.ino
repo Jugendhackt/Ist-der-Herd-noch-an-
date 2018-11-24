@@ -1,8 +1,17 @@
+#include <ESP8266WiFi.h>
+
+
+//const char* mqtt_server = "mqtt.stg.freifunk-iot.de";
+
+WiFiClient espClient;
+
+//PubSubClient client(espClient);
 int sensorpin = D3;
 boolean state = false;
 void setup() {
   pinMode(sensorpin,INPUT);
   Serial.begin(115200);
+  Serial.println("ProgramStart"); 
   setup_wifi(); 
   // put your setup code here, to run once:
 
