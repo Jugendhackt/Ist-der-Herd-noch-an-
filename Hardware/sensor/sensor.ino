@@ -1,7 +1,10 @@
 #include <ESP8266WiFi.h>
+<<<<<<< HEAD
 #include "auth.h"
 #include "ESP8266HTTPClient.h"
 int id = 5;
+=======
+>>>>>>> 19eb06fd60acbf7d1214a455464b2989c4f29d96
 
 
 //const char* mqtt_server = "mqtt.stg.freifunk-iot.de";
@@ -14,8 +17,8 @@ boolean state = false;
 void setup() {
   pinMode(sensorpin,INPUT);
   Serial.begin(115200);
-  Serial.println("ProgramStart"); 
-  setup_wifi(); 
+  Serial.println("ProgramStart");
+  setup_wifi();
   // put your setup code here, to run once:
 
 }
@@ -27,7 +30,7 @@ void setup_wifi() {
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
- 
+
  //only Station, no AP
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
@@ -47,6 +50,7 @@ void loop() {
   state = digitalRead(sensorpin);
   Serial.println(state);
   delay(2000);
+<<<<<<< HEAD
   state = !state;
 
     if(WiFi.status()== WL_CONNECTED){   //Check WiFi connection status
@@ -80,5 +84,9 @@ void loop() {
         Serial.println("Error in WiFi connection");   
      
      }
+=======
+
+  // put your main code here, to run repeatedly:
+>>>>>>> 19eb06fd60acbf7d1214a455464b2989c4f29d96
 
 }

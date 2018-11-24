@@ -1,0 +1,37 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.anzeigebox {
+  width: 200px;
+  height: 100px;
+  border: 2px black solid;
+  padding: 10px;
+  /*margin-top: 50px;*/
+}
+
+.column {
+  float:left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.history {
+  border: solid black 2px;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
