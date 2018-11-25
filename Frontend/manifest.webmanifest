@@ -1,0 +1,15 @@
+{
+  "name": "ist der Herd noch an?",
+  "description": "selbsterklärend",
+  "launch_path": "/",
+  "icons": {
+  },
+  "developer": {
+    "name": "Annika, Julia, Elisabeth, Benny, Felix, Artem, Jana",
+    "url": "jugendhackt.org"
+  },
+  "permissions": {
+    "desktop-notification":{}
+  },
+  "default_locale": "en"
+}
