@@ -1,12 +1,19 @@
 * {
   font-family: sans-serif;
+  margin: 0;
 }
+
+body {
+    background-color: #6f6f70;
+}
+
+
 
 h1 {
   margin: auto;
   text-decoration: underline;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 
@@ -14,8 +21,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 25px;
-    background-color: #a4a6a8;
-    width: 100%;
+    background-color: #f2c768;
     text-align: center;
 }
 
@@ -26,6 +32,7 @@ li {
 li a {
     padding: 20px;
     text-decoration: none;
+    background-color: #f2c768;
 }
 
 
@@ -42,8 +49,4 @@ a {
   width: 500px;
   margin-left: 31%;
   margin-top: 50px;
-}
-
-p {
-
 }
