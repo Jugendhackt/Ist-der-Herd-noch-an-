@@ -32,7 +32,7 @@ def test(id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=80)
     #parser = SafeConfigParser()
     #parser.read('config.ini')
     #print(parser.get('server', 'user'))
