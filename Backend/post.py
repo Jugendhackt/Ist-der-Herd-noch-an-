@@ -1,5 +1,6 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, jsonify
 import mysql.connector as mariaDB
+import random
 from configparser import SafeConfigParser
 
 app = Flask(__name__)
@@ -27,8 +28,12 @@ def test(id):
         cnx.close()
         return Response('Success')
     else:
-        return Response('Du bist ****')
+        return Response('Einfach nur nein')
 
+@app.route('/<path:path>')
+def sample(path):
+    json = {'an':bool(random.getrandbits(1))}
+    return jsonify(json)
 
 
 if __name__ == '__main__':
