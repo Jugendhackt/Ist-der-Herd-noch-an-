@@ -3,10 +3,10 @@
   margin: 0;
 }
 
+
 body {
     background-color: #6f6f70;
 }
-
 
 
 h1 {
@@ -29,6 +29,7 @@ li {
     display: inline;
 }
 
+
 li a {
     padding: 20px;
     text-decoration: none;
@@ -40,10 +41,12 @@ a {
   color: black;
 }
 
+
 #anzeige {
   text-align: center;
   font-size: 1.5em;
 }
+
 
 .imageandtext {
   width: 500px;

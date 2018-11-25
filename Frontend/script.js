@@ -8,20 +8,20 @@ function toggle(){
     document.getElementById("anzeige").innerHTML ="Der Herd ist aus";
     $("#image").attr("src","Icon.v.2.NoFire.png");
   }
-    an = !an;
+  
 }
 
 
 $(document).ready(function(){
   getstate();
-  setInterval(getstate,5000);
+  setInterval(getstate,1000);
 });
 function getstate(){
   $.get("http://http.stg.freifunk-iot.de/sample.json", function(data, status){
       an= data.an;
       console.log("Data: " + an + "\nStatus: " + status);
       if (status) {
-        toggle();
+
       }
   });
 
