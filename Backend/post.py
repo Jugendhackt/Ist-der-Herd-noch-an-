@@ -56,6 +56,7 @@ def sample(path):
 if __name__ == '__main__':
     credentials = config()
     cnx = mariaDB.connect(user=credentials['myuser'], password=credentials['mypassword'], host=credentials['myhost'], database='herdan', port=credentials['port'])
+    cnx.autocommit = True
     app.run(debug=True, host='0.0.0.0', port=80)
     #parser = SafeConfigParser()
     #parser.read('config.ini')
