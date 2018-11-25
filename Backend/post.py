@@ -19,7 +19,7 @@ def test(id):
     if 0 <= int(data) <= 1:
         device_id = id
         credentials = config()
-        cnx = mariaDB.connect(user=credentials['myuser'], password=credentials['mypassword'], host=credentials['myhost'], database='herdan', port='3000')
+        cnx = mariaDB.connect(user=credentials['myuser'], password=credentials['mypassword'], host=credentials['myhost'], database='herdan', port='3306')
         cursor = cnx.cursor()
         cursor.execute("INSERT INTO `Datenpunkt` (`id`, `time`, `wert`, `sensorid`) VALUES (NULL,current_timestamp(), '{0}', '{1}');".format(data, device_id))
         cnx.commit()
