@@ -30,10 +30,11 @@ def test(id):
     else:
         return Response('Einfach nur nein')
 
-@app.route('/')
-def sample():
+@app.route('/<path:path>')
+def sample(path):
     json = {'an':bool(random.getrandbits(1))}
     return jsonify(json)
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
