@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  background-color: #6f6f70;
+  width: auto;
 }
 
 h1 {
@@ -14,8 +16,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 25px;
-    background-color: #a4a6a8;
-    width: 100%;
+    background-color: #f2c768;
     text-align: center;
 }
 
@@ -26,6 +27,7 @@ li {
 li a {
     padding: 20px;
     text-decoration: none;
+    background-color: #f2c768;
 }
 
 
@@ -42,8 +44,4 @@ a {
   width: 500px;
   margin-left: 31%;
   margin-top: 50px;
-}
-
-p {
-
 }
